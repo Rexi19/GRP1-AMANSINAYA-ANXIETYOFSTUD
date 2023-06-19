@@ -1,0 +1,145 @@
+/* Navbar Styles */
+.navbar {
+  background-color: lightblue;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.nav-item {
+  margin-right: 0px;
+}
+
+/* Content Styles */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+body:not(.navbar) {
+  margin: 1px 10;
+  padding: 3 20px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.left-image {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-indent: 2em;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 300px;
+  width: 15rem;
+}
+body:not(.custom-background) {
+  margin: 20px; /* Set margin for body excluding navbar */
+}
+
+.d-grid-gap-2 {
+  margin: 20px; /* Set margin for the text content */
+}
+/* Media query for smartphones */
+@media (max-width: 767px) {
+  .image {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .left-image {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

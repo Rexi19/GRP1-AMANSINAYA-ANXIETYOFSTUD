@@ -1,0 +1,146 @@
+/* Navbar Styles */
+.navbar {
+  background-color: lightblue;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.nav-item {
+  margin-right: 0px;
+}
+
+/* Content Styles */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+body:not(.navbar) {
+  margin: 1px 10;
+  padding: 3 20px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.left-image {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-indent: 2em;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+.card-text {
+  font-size: 14px; /* Adjust the font size */
+  line-height: 1.5; /* Adjust the line height */
+  margin-bottom: 1px; /* Adjust the margin bottom */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 300px;
+  width: 15rem;
+}
+body:not(.custom-background) {
+  margin: 20px; /* Set margin for body excluding navbar */
+}
+
+.d-grid-gap-2 {
+  margin: 20px; /* Set margin for the text content */
+}
+/* Adjust the card layout for mobile devices */
+@media only screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Add this line to center the container vertically */
+    text-align: center; /* Add this line to center the cards horizontally */
+    gap: 20px; /* Reduce the gap between cards for a better mobile view */
+    margin: 0 auto; /* Add this line to center the container horizontally */
+  }
+
+  .card {
+    width: 100%; /* Set the cards to occupy the full width of the container */
+  height: auto; /* Remove the fixed height to allow cards to adjust their height based on content */
+  margin-bottom: 20px; /* Add some bottom margin to create spacing between cards */
+}
+
+  }
+
+/* Adjust the footer layout for mobile devices */
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-columns {
+    column-count: 1;
+    display: flex;
+    justify-content: center;
+  }
+}

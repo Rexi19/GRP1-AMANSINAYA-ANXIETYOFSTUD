@@ -1,0 +1,203 @@
+/* Navbar Styles */
+.navbar {
+  background-color: lightblue;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 20px
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.nav-item {
+  margin-right: 10px; /* Adjust the spacing between the links */
+}
+
+/* Content Styles */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.left-image {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-indent: 2em;
+  /* margin-right: 20px; */
+  margin-bottom: 10px;
+}
+
+p1,
+p2,
+p3,
+p4,
+p5,
+p6,
+p7,
+p8,
+p9,
+p10,
+p11 {
+  margin-top: 0;
+  /* margin-right: 20px; */
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Add this line to make all cards the same height */
+  text-align: center;
+  gap: 50px;
+}
+
+.card {
+  flex: 1; /* Use flex property to distribute available space evenly */
+  max-width: 400px; /* Set a maximum width for the cards */
+  height: 600px; 
+}
+
+.card-img-top {
+  max-height: 100%; /* Ensure the image does not exceed the card's height */
+}
+
+.card-text {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Decrease the bottom margin to reduce spacing */
+  margin-top: 20px; /* Decrease the top margin to reduce spacing */
+}
+
+.spaced-button {
+  margin: 10px;
+  /* or */
+  padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
+  p10,
+  p11,
+  p12 {
+    font-size: 16px;
+  }
+}
+
+/* Make the navbar responsive */
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Adjust the card layout for mobile devices */
+@media only screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Add this line to center the container vertically */
+    text-align: center; /* Add this line to center the cards horizontally */
+    gap: 20px; /* Reduce the gap between cards for a better mobile view */
+    margin: 0 auto; /* Add this line to center the container horizontally */
+  }
+
+  .card {
+    width: 100%; /* Set the cards to occupy the full width of the container */
+  height: auto; /* Remove the fixed height to allow cards to adjust their height based on content */
+  margin-bottom: 20px; /* Add some bottom margin to create spacing between cards */
+}
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1px;
+}
+
+.card-img-top {
+  width: 400px; /* Adjust the width to occupy the full container */
+  height: 300px; /* Adjust the height */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  border-radius: 10px; /* Optionally add border radius to the image */
+}
+
+  }
+
+/* Adjust the footer layout for mobile devices */
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-columns {
+    column-count: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
